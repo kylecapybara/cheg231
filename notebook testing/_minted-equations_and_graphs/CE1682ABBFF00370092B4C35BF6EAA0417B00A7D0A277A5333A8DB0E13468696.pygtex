@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{edo\PYGZus{}sol} \PYG{o}{=} \PYG{n}{sympy}\PYG{o}{.}\PYG{n}{dsolve}\PYG{p}{(}\PYG{n}{edo}\PYG{p}{,} \PYG{n}{P}\PYG{p}{(}\PYG{n}{t}\PYG{p}{))}
+\PYG{n}{edo\PYGZus{}sol}
+\end{Verbatim}

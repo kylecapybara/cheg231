@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{sympy}
+\PYG{n}{t}\PYG{p}{,} \PYG{n}{K} \PYG{p}{,}\PYG{n}{r}\PYG{p}{,} \PYG{n}{P0}\PYG{p}{,} \PYG{n}{C1} \PYG{o}{=} \PYG{n}{sympy}\PYG{o}{.}\PYG{n}{symbols}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}t, K, r, P\PYGZus{}0, C\PYGZus{}1\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{P} \PYG{o}{=} \PYG{n}{sympy}\PYG{o}{.}\PYG{n}{Function}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}P\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{edo} \PYG{o}{=} \PYG{n}{P}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{o}{.}\PYG{n}{diff}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{r} \PYG{o}{*} \PYG{n}{P}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{P}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{o}{/}\PYG{n}{K}\PYG{p}{)}
+\PYG{n}{edo}
+\end{Verbatim}

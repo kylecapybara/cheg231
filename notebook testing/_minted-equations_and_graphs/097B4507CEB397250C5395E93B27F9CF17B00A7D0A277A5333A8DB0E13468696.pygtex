@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Intervalo de tiempo en que se obtiene la solución}
+\PYG{n}{p1} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{logistica}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{P0} \PYG{o}{=} \PYG{l+m+mi}{100}\PYG{p}{),} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}P\PYGZus{}0 = 100\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{p1} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{logistica}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{P0} \PYG{o}{=} \PYG{l+m+mi}{2000}\PYG{p}{),} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}P\PYGZus{}0 = 1500\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{()}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

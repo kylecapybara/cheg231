@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{float}
+
+% for custom subsection
+\usepackage{titlesec}
+% package for enumerate with letters
+\usepackage{enumitem}
+
+\titleformat{\subsection}
+  {\normalfont\fontfamily{phv}\fontsize{14}{17}}{\thesubsection}{1em}{}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Kyle Wodehouse}
+\lhead{CHEG231}
+\chead{Homework 1}
+\title{\bfseries Homework 1}
+\author{Kyle Wodehouse}
+\rfoot{\thepage}
+% 1 -> 5 from least to most descriptive
+\setcounter{tocdepth}{1}
+
+\begin{document}
+\maketitle
+
+\section*{1. Definitions \small (pages are for my own reference)}
+
+\begin{enumerate}[label= (\alph*)]
+    \item \textbf{closed system} -- A system where mass cannot enter or leave the system. (pg. 3)
+    \item \textbf{open system} -- A system where mass can enter or leave the system (cross system boundary).
+    \item \textbf{isolated system} -- a system closed to both heat and energy; a change in the surroundings cannot change the system. (pg. 3)
+    \item \textbf{steady-state system} -- a system where things may be flowing in our out, but the system properties do not change with time. (pg. 3)
+    \item \textbf{adiabatic system} -- a system where there are no heat flows in or out; system is thermally isolated from surroundings. (pg. 3)
+    \item \textbf{state} -- thermodynamic properties of a system as characterized by density, refractive index, composition, pressure, temperature, etc. (pg. 4)
+    \item \textbf{phase} -- state of agglomeration of matter in a system. (pg. 4)
+    \item \textbf{equilibrium state} -- state where there are no mass or energy flows in or out of the system, the rate of all chemical reactions is zero, all concentration gradients are zero, and the work between the system and the surroundings is zero. (pg. 8)
+    \item \textbf{absolute pressure} -- pressure scale where zero is the lowest theoreically possible pressure. (pg. 12)
+    \item \textbf{temperature} -- property where if two systems have the same temperature value, they are in thermal equilibrium. (pg. 12)
+    \item \textbf{ideal gas} -- a gas at a density so low that intermolecular interactions are negligible. (pg. 13)
+    \item \textbf{thermometric property} -- a property in which each value corresponds to a unique temperature. (pg. 14)
+    \item \textbf{heat} -- transfer of energy as a result of only a temperature difference. (pg. 15)
+    \item \textbf{work} -- energy transfer by any mechanism involving mechanical motion of, or across, the system boundary. (pg. 15)
+    \item \textbf{intensive variable} -- properties independent of the size of the system (pressure, temperature). (pg. 19)
+    \item \textbf{extensive variable} -- properties dependent on the size of the system (mass, volume, total energy). (pg. 19)
+    \item \textbf{energy} -- The capacity to do work, or the capacity to raise the temperature of a substance.
+\end{enumerate}
+
+\pagebreak
+
+\section*{4. Math Practice}
+
+\subsection*{a.}
+
+\begin{align*}
+  \int_{\underbar{V}_1}^{\underbar{V}_2} P \ d\underbar{V} &= RT \int_{\underbar{V}_1}^{\underbar{V}_2} \frac{1}{\underbar{V}} \ d\underbar{V} \\
+  &= RT \left[ \ln(\underbar{V}) \right]_{\tiny \underbar{V}_1}^{ \tiny \underbar{V}_2} \\
+  &= RT \left[ ln(\underbar{V}_2) - ln(\underbar{V}_1) \right] \\
+  &= RT \ ln\left(\frac{\underbar{V}_2}{\underbar{V}_1}\right) \\
+\end{align*}
+
+\subsection*{b.}
+\indent
+
+First we can describe volume as a function of $x$ where $x$ represents the distance compressed, $L_1$ represents the length of the cylinders, and $A$ represents the cross-sectional area of the cylinder
+
+$$
+  V = A \left( L_1 - x \right)
+$$
+
+Then taking the derivitave with respect to x on each side, we get
+
+$$
+  \frac{dV}{dx} = -A
+$$
+
+Which yields the relationship
+
+$$
+  \frac{- dV}{A} = dx
+$$
+
+Returning to the work definition we can change to $dV$ and apply the relationship $P = \frac{F}{A}$
+
+$$
+  W = \int_{x_1}^{x_2} F \ dx = - \int_{x_1}^{x_2} \frac{F}{A} \ dV = - \int_{x_1}^{x_2} P \ dV
+$$
+
+Now to adjust the bounds, we can use the relationship between $x$ and $V$. When $x = x_1$, $V = A(L_1 + 0) = V_1$ and when $x = x_2$, $V = A(L_1 - (x-x_1)) = V_2$. So we can substitute these values in for the bounds of the integral. We can also pull pressure out because this form of work is done against/at a constant pressure.
+
+$$
+  W = - \int_{V_1}^{V_2} P \ dV = - P \int_{V_1}^{V_2} dV = - P(V_2 - V_1)
+$$
+
+\end{document}

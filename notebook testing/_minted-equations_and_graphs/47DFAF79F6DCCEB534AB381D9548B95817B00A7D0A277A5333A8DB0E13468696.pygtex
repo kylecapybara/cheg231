@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ini\PYGZus{}cond} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{P}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{):} \PYG{n}{P0}\PYG{p}{\PYGZcb{}}
+\PYG{n}{ini\PYGZus{}cond}
+\end{Verbatim}

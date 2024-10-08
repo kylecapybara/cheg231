@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{C\PYGZus{}eq} \PYG{o}{=} \PYG{n}{edo\PYGZus{}sol}\PYG{o}{.}\PYG{n}{subs}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{o}{.}\PYG{n}{subs}\PYG{p}{(}\PYG{n}{ini\PYGZus{}cond}\PYG{p}{)}
+\PYG{n}{C\PYGZus{}eq}
+\end{Verbatim}
